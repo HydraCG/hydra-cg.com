@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra W3C Community Group</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site:id" content="1524709850">
+  <meta name="twitter:creator:id" content="64360611">
+  <meta name="twitter:description" content="Hydra simplifies the development of interoperable, hypermedia-driven Web APIs">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Exo:400,700">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<body>
+  <div class="header">
+      <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+          <span class="pure-menu-heading"><img src="img/logo.svg" alt="Hydra"></span>
+          <ul>
+              <li><a href="#specifications">Specifications</a></li>
+              <li><a href="#community">Community</a></li>
+              <li><a href="#tooling">Tooling</a></li>
+              <li><a href="#publications">Publications</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="splash-container">
+    <h1 class="splash-head">Build better Web APIs.<br>
+      Enable smart clients.</h1>
+  </div>
+
+  <div class="content">
+      <div class="pure-g">
+          <div class="l-box pure-u-1">
+              <h1 class="content-head is-center">Hydra simplifies the development of interoperable, hypermedia-driven Web APIs</h1>
+
+              <p>Building Web APIs seems still more an art than a science. How can we build APIs such that generic clients can easily use them? And how do we build those clients? Current APIs heavily rely on out-of-band information such as human-readable documentation and API-specific SDKs. However, this only allows for very simple and brittle clients that are hardcoded against specific APIs. Hydra, in contrast, is a set of technologies that allow to design APIs in a different manner, in a way that enables smarter clients.</p>
+          </div>
+      </div>
+
+      <div class="pure-g" id="specifications">
+          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+              <h3 class="content-head">Hydra Core Vocabulary</h3>
+
+              <p>Essential building blocks for machine-accessible Hypermedia APIs</p>
+
+              <p><a href="spec/latest/core/">Read the specification</a></p>
+
+              <p>There also exists <a href="http://www.markus-lanthaler.com/hydra/console/?url=http://www.markus-lanthaler.com/hydra/api-demo/">a demo Web API featuring a simple issue tracker</a> which allows you to play with Hydra directly in your web browser.</p>
+
+          </div>
+          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+              <h3 class="content-head">Linked Data Fragments</h3>
+
+              <p>API and client designs to publish and query Linked Data at Web-scale</p>
+
+              <p>Get familiar with <a href="spec/latest/linked-data-fragments/">Linked Data Fragments</a> or read the <a href="spec/latest/triple-pattern-fragments/">triple pattern fragments specification</a></p>
+
+              <p><a href="http://data.linkeddatafragments.org/">Various LDF data sources</a> are already available. <a href="http://client.linkeddatafragments.org/">Query them</a>.</p>
+          </div>
+          <div class="l-box pure-u-1 pure-u-lg-1-3">
+              <h3 class="content-head" id="community">Join the Working Group</h3>
+              <p>Wanna help? Then join the Hydra W3C Community Group. Here's how:</p>
+
+              <ol>
+                <li><a href="https://www.w3.org/accounts/request">Get a free W3C account</a> (it may take a while to get approved).</li>
+                <li><a href="http://www.w3.org/community/hydra/">Join the Hydra W3C Community Group</a>.</li>
+                <li>Bonus points: <a href="mailto:public-hydra@w3.org">Send an email to introduce yourself to the group</a>.</li>
+              </ol>
+          </div>
+      </div>
+
+      <div class="pure-g" id="tooling">
+          <div class="l-box pure-u-1">
+              <h3 class="content-head">Tools/Libraries/Applications</h3>
+
+              <ul>
+                <li><a href="http://m.lanthi.com/HydraConsoleGH">HydraConsole</a>: a generic API console
+                  for Hydra-powered Web APIs</li>
+                <li><a href="http://m.lanthi.com/HydraBundleGH">HydraBundle</a>: a bundle for
+                  <a href="http://www.symfony.com">Symfony2</a> to create Web APIs based on Hydra</li>
+                <li><a href="http://m.lanthi.com/sfHydraDemoApp">Hydra demo application:</a> the issue tracker
+                  demo (uses the HydraBundle)</li>
+                <li><a href="http://m.lanthi.com/HydraClientGH">HydraClient</a>: a PHP client library to
+                  access Hydra-powered Web APIs</li>
+                <li><a href="http://m.lanthi.com/json-ld">JsonLD</a>: a JSON-LD processor implemented in PHP</li>
+                <li>Linked Data Fragments Server: serve triple pattern fragments
+                  (<a href="https://github.com/LinkedDataFragments/Server.js">JavaScript</a>,
+                  <a href="https://github.com/LinkedDataFragments/Server.Java">Java</a>,
+                  <a href="https://github.com/elephantbirdconsulting/netkernel-contribution/tree/master/urn.com.elbeesee.kbodata.server">NetKernel</a>)</li>
+                <li>Linked Data Fragments Client: query a Linked Data Fragments API
+                  (<a href="https://github.com/LinkedDataFragments/Client.js">JavaScript</a>,
+                  <a href="https://github.com/LinkedDataFragments/WebClient">browser</a>,
+                  <a href="https://github.com/LinkedDataFragments/Client.Java">Java</a>)</li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="pure-g" id="publications">
+          <div class="l-box pure-u-1">
+              <h3 class="content-head">Publications/Presentations</h3>
+
+              <ul>
+                <li>R.&nbsp;Verborgh,
+                  “<a href="http://www.slideshare.net/RubenVerborgh/the-lonesome-lod-cloud">The Lonesome LOD Cloud</a>,”
+                  presented at the 4th USEWOD Workshop on Usage Analysis and the Web of Data, 2014.</li>
+                <li>R.&nbsp;Verborgh, M.&nbsp;Vander&nbsp;Sande, P.&nbsp;Colpaert,
+                  S.&nbsp;Coppens, E.&nbsp;Mannens, and R.&nbsp;Van de Walle,
+                  “<a href="http://linkeddatafragments.org/publications/ldow2014.pdf">Web-Scale Querying through Linked Data Fragments</a>,”
+                  in Proceedings of the 7th Workshop on Linked Data on the Web (LDOW2014) at the 23nd&nbsp;International
+                  World Wide Web Conference (WWW2014), 2014 [<a href="http://de.slideshare.net/RubenVerborgh/linked-data-fragments">slides</a>].</li>
+                <li>M.&nbsp;Lanthaler,
+                  “<a href="http://m.lanthi.com/1hZucSQ">Full-on Hypermedia APIs with Hydra</a>,”
+                  presented at the API Strategy &amp; Practice Conference. 2014.</li>
+                <li>R.&nbsp;Verborgh,
+                  “<a href="http://www.slideshare.net/RubenVerborgh/hypermedia-cannot-be-the-engine">Hypermedia cannot be the engine</a>,”
+                  presented at the API Strategy &amp; Practice Conference, 2014.</li>
+                <li>C.&nbsp;Pautasso, E.&nbsp;Wilde, and R.&nbsp;Alarcon (editors),
+                  “<a href="http://m.lanthi.com/springer2014-rest-book-toc">REST: Advanced Research Topics and Practical Applications</a>,”
+                  Springer New York, 2014.</li>
+                <li>L.&nbsp;Richardson, M.&nbsp;Amundsen, and S.&nbsp;Ruby,
+                  “<a href="http://amzn.to/1d7RHqy">RESTful Web APIs</a>,” O’Reilly Media, 2013.</li>
+                <li>M.&nbsp;Lanthaler,
+                  “<a href="http://m.lanthi.com/sl-portland2013">Building Next-Generation Web APIs with JSON-LD and Hydra</a>,”
+                  presented at the Symfony Live Portland 2013 [<a href="http://m.lanthi.com/sl-portland2013">slides</a>]
+                  [<a href="http://bit.ly/sl-portland2013-video">video</a>].</li>
+                <li>M.&nbsp;Lanthaler and C.&nbsp;Gütl,
+                  “<a href="http://m.lanthi.com/ldow2013-paper">Hydra: A Vocabulary for Hypermedia-Driven Web APIs</a>,”
+                  in Proceedings of the 6th Workshop on Linked Data on the Web (LDOW2013) at the 22nd&nbsp;International
+                  World Wide Web Conference (WWW2013), 2013 [<a href="http://m.lanthi.com/ldow2013-preso">slides</a>].</li>
+                <li>M.&nbsp;Lanthaler, “<a href="http://m.lanthi.com/www2013-paper">Creating 3rd Generation Web APIs with Hydra</a>,”
+                  in Proceedings of the 22nd&nbsp;International World Wide Web Conference (WWW2013), 2013, pp.&nbsp;35–37
+                  [<a href="http://m.lanthi.com/www2013-preso">slides</a>].</li>
+                <li>M.&nbsp;Lanthaler and C.&nbsp;Gütl,
+                  “<a href="http://m.lanthi.com/wsrest2013-paper">Model Your Application Domain, Not Your JSON Structures</a>,”
+                  in Proceedings of the 4th&nbsp;International Workshop on RESTful Design (WS-REST&nbsp;2013) at the
+                  22nd&nbsp;International World Wide Web Conference (WWW2013), 2013, pp.&nbsp;1415–1420
+                  [<a href="http://m.lanthi.com/wsrest2013-preso">slides</a>].</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="footer l-box is-center">
+      &copy; 2012–2014, Hydra W3C Community Group
+  </div>
+</body>
+</html>
