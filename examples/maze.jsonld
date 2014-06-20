@@ -1,0 +1,165 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/hydra/core",
+    {
+      "@vocab": "http://www.hydra-cg.com/examples/maze#",
+      "supportedProperties": "hydra:supportedProperties",
+      "supportedOperations": "hydra:supportedOperations",
+      "id": "@id",
+      "start": { "@id": "start", "@type": "@id" },
+      "maze": { "@id": "maze", "@type": "@id" },
+      "north": { "@id": "north", "@type": "@id" },
+      "east": { "@id": "east", "@type": "@id" },
+      "south": { "@id": "south", "@type": "@id" },
+      "west": { "@id": "west", "@type": "@id" },
+      "exit": { "@id": "exit", "@type": "@id" }
+    }
+  ],
+  "@id": "http://www.hydra-cg.com/examples/maze",
+  "@type": "owl:Ontology",
+  "label": "The Maze Vocabulary",
+  "comment": "A simple vocabulary for mazes",
+  "defines": [
+    {
+      "@id": "#Maze",
+      "@type": "hydra:Class",
+      "label": "Maze",
+      "comment": "A maze, consisting of multiple cells.",
+      "supportedProperties": [
+        { "property": "name", "readonly": true },
+        { "property": "start", "readonly": true }
+      ]
+    },
+    {
+      "@id": "#name",
+      "@type": "rdf:Property",
+      "label": "name",
+      "comment": "The name of a maze or a cell.",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "#start",
+      "@type": "hydra:Link",
+      "label": "start",
+      "comment": "The entrance to the maze.",
+      "domain": "Maze",
+      "range": "Cell"
+    },
+    {
+      "@id": "#Cell",
+      "@type": "hydra:Class",
+      "label": "Cell",
+      "comment": "A cell of a maze.",
+      "supportedProperties": [
+        { "property": "name", "readonly": true },
+        { "property": "maze", "readonly": true },
+        { "property": "north", "readonly": true },
+        { "property": "east", "readonly": true },
+        { "property": "south", "readonly": true },
+        { "property": "west", "readonly": true }
+      ]
+    },
+    {
+      "@id": "#maze",
+      "@type": "hydra:Link",
+      "label": "maze",
+      "comment": "The maze this cell belongs to.",
+      "domain": "Cell",
+      "range": "Maze"
+    },
+    {
+      "@id": "#north",
+      "@type": "hydra:Link",
+      "label": "north",
+      "comment": "The cell north of this cell.",
+      "domain": "Cell",
+      "range": "Cell"
+    },
+    {
+      "@id": "#east",
+      "@type": "hydra:Link",
+      "label": "east",
+      "comment": "The cell east of this cell.",
+      "domain": "Cell",
+      "range": "Cell"
+    },
+    {
+      "@id": "#south",
+      "@type": "hydra:Link",
+      "label": "south",
+      "comment": "The cell south of this cell.",
+      "domain": "Cell",
+      "range": "Cell"
+    },
+    {
+      "@id": "#west",
+      "@type": "hydra:Link",
+      "label": "west",
+      "comment": "The cell west of this cell.",
+      "domain": "Cell",
+      "range": "Cell"
+    },
+    {
+      "@id": "#exit",
+      "@type": "hydra:Link",
+      "label": "exit",
+      "comment": "The exit.",
+      "domain": "Cell",
+      "range": "hydra:Resource",
+      "supportedOperations": {
+        "@type": "hydra:Operation",
+        "label": "Add user to user collection",
+        "comment": "If you've found the exit, you can add your Twitter username so that we can contact you.",
+        "method": "POST",
+        "expects": "User"
+      }
+    },
+    {
+      "@id": "#Start",
+      "@type": "hydra:Class",
+      "subClassOf": "Cell",
+      "label": "Entrance",
+      "comment": "The entrance of a maze.",
+      "supportedProperties": [
+        { "property": "name", "readonly": true },
+        { "property": "maze", "readonly": true },
+        { "property": "north", "readonly": true },
+        { "property": "east", "readonly": true },
+        { "property": "south", "readonly": true },
+        { "property": "west", "readonly": true }
+      ]
+    },
+    {
+      "@id": "#Exit",
+      "@type": "hydra:Class",
+      "subClassOf": "Cell",
+      "label": "Exit",
+      "comment": "The exit of a maze.",
+      "supportedProperties": [
+        { "property": "name", "readonly": true },
+        { "property": "maze", "readonly": true },
+        { "property": "north", "readonly": true },
+        { "property": "east", "readonly": true },
+        { "property": "south", "readonly": true },
+        { "property": "west", "readonly": true }
+      ]
+    },
+    {
+      "@id": "#User",
+      "label": "User",
+      "comment": "A user.",
+      "@type": "hydra:Class",
+      "supportedProperties": [
+        { "property": "twitter", "required": true }
+      ]
+    },
+    {
+      "@id": "#twitter",
+      "label": "twitter",
+      "comment": "Twitter username.",
+      "domain": "User",
+      "range": "xsd:string"
+    }
+  ]
+}
+
