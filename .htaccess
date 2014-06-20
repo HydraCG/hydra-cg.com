@@ -1,0 +1,22 @@
+# Setup media types
+AddType application/ld+json .jsonld
+AddType application/json .json
+AddType text/turtle .ttl
+
+
+# Redirect all traffic to www-subdomain
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTP_HOST} ^hydra-cg\.com
+  RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=permanent]
+</IfModule>
+
+
+# More redirections
+Redirect 302 /core /spec/latest/core
+Redirect 302 /linked-data-fragments http://linkeddatafragments.org
+
+
+# Enable CORS
+Header always set Access-Control-Allow-Origin "*"
