@@ -30,6 +30,16 @@ label {
     color: #383838;
 }
 
+[id] {
+    padding-top: 6em;
+    margin-top: -7em;
+}
+
+.content-head[id] {
+    padding-top: 7em;
+    margin-top: -6em;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
