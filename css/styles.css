@@ -136,7 +136,13 @@ label {
 
 .pure-menu li a {
     padding: 5px 0;
-    margin: 0 10px;
+    margin: 0 4px;
+}
+
+@media screen and (min-width: 24em) {
+    .pure-menu li a {
+        margin: 0 10px;
+    }
 }
 
 @media screen and (min-width: 48em) {
