@@ -30,6 +30,11 @@ label {
     color: #383838;
 }
 
+[id] {
+    padding-top: 7em;
+    margin-top: -7em;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -151,6 +156,11 @@ label {
     letter-spacing: 0.1em;
     margin: 1em 0 1em;
     line-height: 1.4em;
+}
+
+.content-head[id] {
+    padding-top: 7em;
+    margin-top: -6em;
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
