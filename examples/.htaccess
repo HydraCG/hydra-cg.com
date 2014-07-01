@@ -1,0 +1,3 @@
+# Enable content negotiation which also means that all files are also
+# accessible without file extensions
+Options +MultiViews
