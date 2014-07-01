@@ -35,10 +35,13 @@ label {
     margin-top: -7em;
 }
 
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
+@media screen and (min-width: 30.5em) and (max-width: 48em) {
+    [id] {
+        padding-top: 4em;
+        margin-top: -4em;
+    }
 }
+
 
 /*
  * -- LAYOUT STYLES --
@@ -67,6 +70,22 @@ label {
     padding: 0.5em;
 }
 
+.home-menu img {
+    width: 100%;
+}
+
+.home-menu .pure-menu-heading {
+    max-width: 100px;
+    padding: 5px 10px;
+}
+
+@media screen and (min-width: 48em) {
+    .home-menu .pure-menu-heading {
+        max-width: 222px;
+        padding: 5px 20px;
+    }
+}
+
 .home-menu.pure-menu-open {
     background: #383838;
 }
@@ -84,8 +103,14 @@ label {
 }
 
 .home-menu ul {
-    margin-top: 20px;
+    margin-top: 4px;
     font-family: Exo, sans-serif;
+}
+
+@media screen and (min-width: 48em) {
+    .home-menu ul {
+        margin-top: 18px;
+    }
 }
 
 .home-menu .pure-menu-selected a {
@@ -111,7 +136,13 @@ label {
 
 .pure-menu li a {
     padding: 5px 0;
-    margin: 0 20px;
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 48em) {
+    .pure-menu li a {
+        margin: 0 20px;
+    }
 }
 
 
@@ -128,6 +159,12 @@ label {
     margin-top: 90px;
     text-align: center;
     border-bottom: 10px solid #383838;
+}
+
+@media screen and (min-width: 30.5em) and (max-width: 48em) {
+    .splash-container {
+        margin-top: 55px;
+    }
 }
 
 /* This is the main heading that appears on the blue section */
@@ -162,6 +199,14 @@ label {
     padding-top: 7em;
     margin-top: -6em;
 }
+
+@media screen and (min-width: 30.5em) and (max-width: 48em) {
+    .content-head[id] {
+        padding-top: 5em;
+        margin-top: -4em;
+    }
+}
+
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
