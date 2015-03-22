@@ -158,7 +158,7 @@ label {
  */
 
 .splash-container {
-    background: #f9ac14 url('../img/banner.svg');
+    background: #f9ac14 url('../img/banner.svg') center;
     background-size: cover;
     z-index: 1;
     width: 100%;
@@ -167,13 +167,19 @@ label {
     border-bottom: 10px solid #383838;
 }
 
+@media (max-width: 21em) {
+    .splash-container {
+        margin-top: 90px;
+        border-top: 35px solid #383838;
+    }
+}
+
 @media screen and (min-width: 30.5em) and (max-width: 48em) {
     .splash-container {
         margin-top: 55px;
     }
 }
 
-/* This is the main heading that appears on the blue section */
 .splash-head {
     font-size: 20px;
     padding: 1.5em 1.6em 1em;
