@@ -17,6 +17,13 @@ body {
     /*color: #7f8c8d;*/
     color: #000;
     font-size: 13px;
+    margin-top: 92px;
+}
+
+@media screen and (min-width: 30.01em) and (max-width: 48em) {
+    body {
+        margin-top: 55px;
+    }
 }
 
 h1,
@@ -162,21 +169,13 @@ label {
     background-size: cover;
     z-index: 1;
     width: 100%;
-    margin-top: 90px;
     text-align: center;
     border-bottom: 10px solid #383838;
 }
 
 @media (max-width: 21em) {
     .splash-container {
-        margin-top: 90px;
         border-top: 35px solid #383838;
-    }
-}
-
-@media screen and (min-width: 30.5em) and (max-width: 48em) {
-    .splash-container {
-        margin-top: 55px;
     }
 }
 
