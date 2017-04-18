@@ -77,8 +77,13 @@ label {
     padding: 0.5em;
 }
 
-.home-menu img {
+.pure-menu-heading img {
     width: 100%;
+}
+
+.pure-menu-heading a {
+    padding: 0;
+    border: none;
 }
 
 .home-menu .pure-menu-heading {
