@@ -3,6 +3,12 @@ ol {
     margin: 0em;
 }
 
+ul ul {
+    margin: 0px;
+    list-style-type: disc;
+    padding-left: 2em;
+}
+
 .name {
     font-weight: bold;
 }
