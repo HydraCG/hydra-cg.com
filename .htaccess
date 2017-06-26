@@ -15,6 +15,8 @@ AddType text/turtle .ttl
 
 # More redirections
 Redirect 302 /core /spec/latest/core
+RedirectMatch "^/spec/?$" "/spec/latest/core"
+RedirectMatch "^/spec/latest/?$" "/spec/latest/core"
 Redirect 302 /wiki https://www.w3.org/community/hydra/wiki
 Redirect 302 /linked-data-fragments http://linkeddatafragments.org
 
