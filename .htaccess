@@ -11,7 +11,8 @@ AddType text/turtle .ttl
   RewriteCond %{HTTP_HOST} ^hydra-cg\.com
   RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=permanent]
 
-  RewriteRule ^([^.]*\.md)$ /lib/render-markdown.php/$1 [QSA,L]
+  RewriteCond %{REQUEST_FILENAME} !/lib/render-markdown\.php
+  RewriteRule ^(.+\.md)$ /lib/render-markdown.php/$1 [L]
 </IfModule>
 
 
