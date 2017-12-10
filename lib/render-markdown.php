@@ -1,7 +1,7 @@
 <?php
 
-$rootPath = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..');
-$filePath = realpath($rootPath. DIRECTORY_SEPARATOR . $_SERVER['PATH_INFO']);
+$filePath = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . $_SERVER['PATH_INFO']);
+$rootPath = realpath(__DIR__ . DIRECTORY_SEPARATOR . '../..');
 
 // Only process Markdown files within the Hydra folder
 if (substr($filePath, 0, strlen($rootPath)) === $rootPath
@@ -58,22 +58,7 @@ $header = (substr($content, 0, 2) === '<h' && preg_match('/<h\d>([^<]+)</', $con
       <div class="pure-g">
           <div class="l-box pure-u-1">
 <?php
-
-$_SERVER['PATH_INFO'] = 'lib/test.md';
-
-$rootPath = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..');
-$filePath = realpath($rootPath. DIRECTORY_SEPARATOR . $_SERVER['PATH_INFO']);
-
-// Only process Markdown files within the Hydra folder
-if (substr($filePath, 0, strlen($rootPath)) === $rootPath
-    && pathinfo($filePath, PATHINFO_EXTENSION) === 'md') {
-  require_once(__DIR__ . DIRECTORY_SEPARATOR . 'Parsedown.php');
-  echo Parsedown::instance()->text(file_get_contents($filePath));
-} else {
-  echo '<h1>File not found</h1>';
-  echo '<p>The requested file could not be found.</p>';
-}
-
+echo $content;
 ?>
           </div>
       </div>
