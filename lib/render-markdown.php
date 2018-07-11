@@ -65,7 +65,7 @@ echo $content;
   </div>
 
   <div class="footer l-box is-center">
-      &copy; 2012–2017, Hydra W3C Community Group
+      &copy; 2012–2018, Hydra W3C Community Group
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.9.0/prism.min.js"></script>
