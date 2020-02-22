@@ -29,13 +29,13 @@ $header = (substr($content, 0, 2) === '<h' && preg_match('/<h\d>([^<]+)</', $con
   <meta name="twitter:site:id" content="1524709850">
   <meta name="twitter:creator:id" content="64360611">
   <meta name="twitter:description" content="Hydra simplifies the development of interoperable, hypermedia-driven Web APIs">
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:400,700">
+  <link rel="stylesheet" href="/css/yui/pure-min.css">
   <!--[if lte IE 8]>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+    <link rel="stylesheet" href="/css/yui/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="/css/yui/grids-responsive-min.css">
   <!--<![endif]-->
   <link rel="stylesheet" href="/css/styles.css">
   <!--<![endif]-->
