@@ -35,7 +35,7 @@ $header = (substr($content, 0, 2) === '<h' && preg_match('/<h\d>([^<]+)</', $con
     <link rel="stylesheet" href="/css/yui/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="/css/yui/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
   <!--<![endif]-->
   <link rel="stylesheet" href="/css/styles.css">
   <!--<![endif]-->
